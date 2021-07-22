@@ -4,8 +4,8 @@ const readline = require('readline').createInterface({
 });
 
 function Palindrome(str) {
-  var len = Math.floor(str.length / 2);
-  for (var i = 0; i < len; i++)
+  let len = Math.floor(str.length / 2);
+  for (let i = 0; i < len; i++)
     if (str[i] !== str[str.length - i - 1]) return false;
   return true;
 }
