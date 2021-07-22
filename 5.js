@@ -3,12 +3,12 @@ const readline = require('readline').createInterface({
   output: process.stdout,
 });
 
-function Palindrome(str) {
+const Palindrome = (str) => {
   let len = Math.floor(str.length / 2);
   for (let i = 0; i < len; i++)
     if (str[i] !== str[str.length - i - 1]) return false;
   return true;
-}
+};
 
 readline.question('input: ', (word) => {
   isPalindrome = Palindrome(word);
